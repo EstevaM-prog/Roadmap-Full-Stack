@@ -1,0 +1,10 @@
+# Abre o editor de tarfeas automatico
+crontab -e
+
+# Executa o scipt todos os dias as 07:00
+0 7 * * * /home/estevam/backup_logs/NOME_DO_SERVIDOR/extrair_logs_servidor.sh
+# Executa o scipt todos os dias as 20:00
+0 20 * * * /home/estevam/backup_logs/NOME_DO_SERVIDOR/extrair_logs_servidor.sh
+
+#Mostra o status do serviço cron
+systemctl status cron
